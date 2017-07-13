@@ -3,7 +3,7 @@
   <div class="container">
 
     <div class="input-group " style="margin-top:20px">
-          <input type="text" class="form-control"placeholder="请输入字段名" / >
+          <input type="text" class="form-control"placeholder="请输入圈子或内容" / >
               <span class="input-group-btn">
               <%= link_to "搜索",'search_list',class:'btn btn-success'%>
             </span>
@@ -32,14 +32,17 @@
         </div>
         </div>
         <br>
-        <div class="input-group">
-          <!-- <span class="input-group-addon">介绍</span> -->
-          <div class="form-group">
-            <textarea class="form-control input-text " rows="4" placeholder="圈子简介(选填)"></textarea>
-          </div>
-        </div>
+            <textarea class="form-control " rows="5" placeholder="圈子简介(选填)"></textarea>
         <br/>
-        <%= link_to "创建",'#',class: 'form-control btn btn-lg btn-info btn-search'%>
+
+
+          <%= link_to "创建",'#',class: 'btn btn-lg form-control  btn-info '%>
+          <br/>
+          <br>
+
+          <%= link_to "返回",'/',class: 'btn btn-lg form-control  btn-info '%>
+
+
     </form>
   </div>
 </div>
