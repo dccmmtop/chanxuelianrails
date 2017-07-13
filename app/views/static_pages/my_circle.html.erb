@@ -20,8 +20,20 @@
         <!-- <%= link_to image_tag("rails.png", alt: "Rails logo" ),class: "img-responsive"%> -->
       </td>
       <td width="80%">
+        <strong>ruby开发</strong><br/><p hidden>ruby</p>
+        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。
+        <span class="label label-info">编程</span>
 
+      </td>
+    </tr>
+    <tr >
+      <td>
+      <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive" )%>
+      </td>
+      <td>
+        <strong>ruby开发</strong><br/><p hidden>ruby</p>
         简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。
+        <span class="label label-info">编程</span>
       </td>
     </tr>
     <tr>
@@ -29,7 +41,9 @@
       <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive" )%>
       </td>
       <td>
+        <strong>ruby开发</strong><br/><p hidden>ruby</p>
         简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。
+        <span class="label label-info">编程</span>
       </td>
     </tr>
     <tr>
@@ -37,15 +51,9 @@
       <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive" )%>
       </td>
       <td>
+        <strong>ruby开发</strong><br/><p hidden>ruby</p>
         简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。
-      </td>
-    </tr>
-    <tr>
-      <td>
-      <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive" )%>
-      </td>
-      <td>
-        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。
+        <span class="label label-info">编程</span>
       </td>
     </tr>
 
@@ -55,3 +63,14 @@
 
 
 </div>
+
+
+
+
+
+<script type="text/javascript">
+$("tr").click(function(){
+  alert($(this).find('p').text());
+});
+
+</script>
