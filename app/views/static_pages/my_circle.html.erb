@@ -1,0 +1,57 @@
+
+<div class="container">
+  <div class="">
+      <h1>我的圈子</h1>
+      <h4><small>
+        <%= link_to "创建",'static_pages/creat',class: "btn-link"%>&nbsp
+        <%= link_to "最新",'static_pages/last',class: "btn-link"%>&nbsp
+        <%= link_to "更多",'static_pages/dynamic',class: "btn-link"%>
+
+        <!-- <button type="button" class="btn-link creat">创建</button> -->
+
+
+        </small>
+      </h4>
+  </div>
+  <table class="table">
+    <tr>
+      <td width="20%">
+        <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive" )%>
+        <!-- <%= link_to image_tag("rails.png", alt: "Rails logo" ),class: "img-responsive"%> -->
+      </td>
+      <td width="80%">
+
+        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive" )%>
+      </td>
+      <td>
+        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive" )%>
+      </td>
+      <td>
+        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive" )%>
+      </td>
+      <td>
+        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。
+      </td>
+    </tr>
+
+  </table>
+
+
+
+
+</div>
