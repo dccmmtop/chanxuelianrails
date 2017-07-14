@@ -1,126 +1,67 @@
+<div class="container">
 
-
-  <div class="container" >
-
-    <div class="panel panel-default" style="margin-top:10px">
+  <div class="panel panel-default" style="margin-top:10px">
     <div class="panel-heading">
-    圈子
-    <div class="pull-right">
-      <%= link_to "创建",creat_path%>
-    </div>
+      圈子
+      <div class="pull-right">
+        <%= link_to "创建",creat_path%>
+      </div>
     </div>
     <div class="panel-body">
       <div class="">
 
-      <table>
-        <tr>
-          <td><%= link_to image_tag("user1.jpg",alt:"user1",class:"img-responsive img-circle")%></td>
-          <td style="">&nbsp&nbsp邓超<br>&nbsp&nbsp2017/7/14</td>
-        </tr>
+        <table>
+          <tr>
+            <td><%= link_to image_tag("user1.jpg",alt:"user1",class:"img-responsive img-circle")%></td>
+            <td style="">&nbsp&nbsp邓超<br>&nbsp&nbsp2017/7/14</td>
+          </tr>
 
-      </table>
-      《人类简史》和《未来简史》的作者 发表对人工智能的看法<a href="https://media.weibo.cn/article?id=2309404126842893252606&jumpfrom=weibocom">链接：微博文章</a>
-  <!-- <span class="glyphicon glyphicon-thumbs-up"></span> &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span> -->
-  </div>
-<hr>
-  <div class="">
+        </table>
+        《人类简史》和《未来简史》的作者 发表对人工智能的看法<a href="https://media.weibo.cn/article?id=2309404126842893252606&jumpfrom=weibocom">链接：微博文章</a>
+        <!-- <span class="glyphicon glyphicon-thumbs-up"></span> &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span> -->
+      </div>
+      <hr>
+      <div class="">
 
-  <table>
-    <tr>
-      <td><%= link_to image_tag("user2.jpg",alt:"user1",class:"img-responsive img-circle")%></td>
-      <td style="">&nbsp&nbspmonkeyfly<br>&nbsp&nbsp2017/7/13</td>
-    </tr>
+        <table>
+          <tr>
+            <td><%= link_to image_tag("user2.jpg",alt:"user1",class:"img-responsive img-circle")%></td>
+            <td style="">&nbsp&nbspmonkeyfly<br>&nbsp&nbsp2017/7/13</td>
+          </tr>
 
-  </table>
-机器之心 - 吴恩达重磅回归，成立创业公司Deeplearning.ai（分享自知乎网）<a href="https://zhuanlan.zhihu.com/p/27538445">链接：吴恩达重磅回归，成立创业公司Deeplearning.ai - 知乎专栏</a>
-  <!-- <span class="glyphicon glyphicon-thumbs-up"></span> &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span> -->
-</div>
-
-
-
+        </table>
+        机器之心 - 吴恩达重磅回归，成立创业公司Deeplearning.ai（分享自知乎网）<a href="https://zhuanlan.zhihu.com/p/27538445">链接：吴恩达重磅回归，成立创业公司Deeplearning.ai - 知乎专栏</a>
+        <!-- <span class="glyphicon glyphicon-thumbs-up"></span> &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span> -->
+      </div>
 
     </div>
     <div class="panel-footer">
       &nbsp
-       <div class="pull-right">
-           <%= link_to "更多",more_path%>
-     </div>
-</div>
-</div>
+      <div class="pull-right">
+        <%= link_to "更多",more_path%>
+      </div>
+    </div>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-  <!-- <table class="table" style="margin-top:10px">
-    <tr>
-      <td width="20%">
-          <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive img-circle" )%>
-      </td>
-      <td width="80%">
-
-        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。 <span >邓超 2017年07月13日</span><br>
-        <span class="glyphicon glyphicon-thumbs-up"></span> &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span>
-
-      </td>
-
-    </tr>
-    <tr>
-      <td>
-        <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive img-circle" )%>
-      </td>
-      <td>
-        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。 <span >邓超 2017年07月13日</span><br>
-        <span class="glyphicon glyphicon-thumbs-up"></span> &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span>
-      </td>
-    </tr>
-    <tr>
-      <td>
-          <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive img-circle" )%>
-      </td>
-      <td>
-        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。 <span >邓超 2017年07月13日</span><br>
-        <span class="glyphicon glyphicon-thumbs-up"></span> &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span>
-      </td>
-    </tr>
-    <tr>
-      <td>
-          <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img img-responsive img-circle " )%>
-      </td>
-      <td>
-        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。 <span >邓超 2017年07月13日</span><br>
-        <span class="glyphicon glyphicon-thumbs-up"></span> &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span>
-      </td>
-    </tr>
-
-  </table> -->
-
-
+  
 
 </div>
 <script type="text/javascript">
-  $(".btn-dy1").click(function(){
-    $(this).attr("class","btn btn-success btn-dy1");
-    $(".btn-dy2").attr("class","btn btn-default btn-dy2");
+  $(".btn-dy1").click(function () {
+    $(this).attr("class", "btn btn-success btn-dy1");
+    $(".btn-dy2").attr("class", "btn btn-default btn-dy2");
     return false;
   });
-  $(".btn-dy2").click(function(){
-    $(this).attr("class","btn btn-success btn-dy2");
-    $(".btn-dy1").attr("class","btn btn-default btn-dy1");
+  $(".btn-dy2").click(function () {
+    $(this).attr("class", "btn btn-success btn-dy2");
+    $(".btn-dy1").attr("class", "btn btn-default btn-dy1");
     return false;
 
   });
 </script>
 
 <style media="screen">
-  span{
-    color: #667
+  span {
+    color: #667;
   }
 </style>

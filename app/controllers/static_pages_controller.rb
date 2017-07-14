@@ -1,18 +1,15 @@
 class StaticPagesController < ApplicationController
   def creat
-
+    print '123'
   end
 
-  def dynamic
+  def dynamic; end
 
-  end
-  def search_list
+  def search_list; end
 
-  end
-  def more
+  def more; end
 
-  end
-  def time_more
+  def time_more; end
 
-  end
+  def circle_more; end
 end
