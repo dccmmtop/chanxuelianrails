@@ -9,4 +9,10 @@ class StaticPagesController < ApplicationController
   def search_list
 
   end
+  def more
+
+  end
+  def time_more
+
+  end
 end
