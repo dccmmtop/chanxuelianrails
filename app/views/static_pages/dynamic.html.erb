@@ -10,35 +10,41 @@
   <table class="table" style="margin-top:10px">
     <tr>
       <td width="20%">
-          <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive" )%>
+          <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive img-circle" )%>
       </td>
       <td width="80%">
 
-        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。
+        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。 <span >邓超 2017年07月13日</span><br>
+        <span class="glyphicon glyphicon-thumbs-up"></span> &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span>
+
+      </td>
+
+    </tr>
+    <tr>
+      <td>
+        <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive img-circle" )%>
+      </td>
+      <td>
+        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。 <span >邓超 2017年07月13日</span><br>
+        <span class="glyphicon glyphicon-thumbs-up"></span> &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span>
       </td>
     </tr>
     <tr>
       <td>
-        <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive" )%>
+          <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive img-circle" )%>
       </td>
       <td>
-        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。
-      </td>
-    </tr>
-    <tr>
-      <td>
-          <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive" )%>
-      </td>
-      <td>
-        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。
+        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。 <span >邓超 2017年07月13日</span><br>
+        <span class="glyphicon glyphicon-thumbs-up"></span> &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span>
       </td>
     </tr>
     <tr>
       <td>
-          <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img-responsive" )%>
+          <%= link_to image_tag("rails.png", alt: "Rails logo",class: "img img-responsive img-circle " )%>
       </td>
       <td>
-        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。
+        简要介绍:一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。 <span >邓超 2017年07月13日</span><br>
+        <span class="glyphicon glyphicon-thumbs-up"></span> &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span>
       </td>
     </tr>
 
@@ -51,14 +57,18 @@
   $(".btn-dy1").click(function(){
     $(this).attr("class","btn btn-success btn-dy1");
     $(".btn-dy2").attr("class","btn btn-default btn-dy2");
-    // alert($(this).attr("class"));
     return false;
   });
   $(".btn-dy2").click(function(){
     $(this).attr("class","btn btn-success btn-dy2");
     $(".btn-dy1").attr("class","btn btn-default btn-dy1");
-    // alert($(this).attr("class"));
     return false;
 
   });
 </script>
+
+<style media="screen">
+  span{
+    color: #667
+  }
+</style>

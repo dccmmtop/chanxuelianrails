@@ -6,4 +6,7 @@ class StaticPagesController < ApplicationController
   def dynamic
 
   end
+  def search_list
+
+  end
 end
