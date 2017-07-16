@@ -3,9 +3,11 @@ class StaticPagesController < ApplicationController
     print '123'
   end
 
-  def dynamic; end
+  def dynamic
+   end
 
-  def search_list; end
+  def search_list
+   end
 
   def more; end
 

@@ -1,65 +1,56 @@
 <div class="container">
   <nav class="navbar navbar-default navbar-fixed-top">
-<div class="container">
-  <%= link_to "返回","dynamic",class:"btn btn-success"%>
-</div>
-</nav>
-<br>
-<br>
-<br>
-<div class="">
+    <div class="container">
+      <%= link_to "返回","dynamic",class:"btn btn-success"%>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <div class="">
     <iframe id="iframepage" src="./time_more" width="100%" scrolling="yes" frameborder="0"></iframe>
     <br>
     <br>
     <br>
   </div>
 
-
-
-
-<div id="footer" >
-  <nav class="navbar-fixed-bottom">
-    <div class="btn-group btn-group-lg btn-group-justified">
+  <div id="footer">
+    <nav class="navbar-fixed-bottom">
+      <div class="btn-group btn-group-lg btn-group-justified">
         <a href="#" class="btn btn-default btn-dy1" role="button">按时间</a>
-        <a href="#" class="btn btn-default btn-dy2" role="button" >按圈子</a>
-    </div>
-  </nav>
-</div>
+        <a href="#" class="btn btn-default btn-dy2" role="button">按圈子</a>
+      </div>
+    </nav>
+  </div>
 
+  <script type="text/javascript">
 
+    $(function () {
+      changeFrameHeight();
 
+    });
 
+    function changeFrameHeight() {
+      var ifm = document.getElementById("iframepage");
+      ifm.height = document.documentElement.clientHeight;
+    }
+    window.onresize = function () {
+      changeFrameHeight();
+    }
 
-<script type="text/javascript">
+    $(".btn-dy1").click(function () {
+      $("#iframepage").attr("src", "time_more");
+      return false;
+    });
+    $(".btn-dy2").click(function () {
+      $("#iframepage").attr("src", "circle_more");
+      return false;
 
-$(function(){
-  changeFrameHeight();
+    });
+  </script>
+  <style media="screen">
+    .btn {
+      margin-top: 7px;
+    }
 
-});
-
-
-function changeFrameHeight(){
-    var ifm= document.getElementById("iframepage");
-    ifm.height=document.documentElement.clientHeight;
-}
-window.onresize=function(){
-     changeFrameHeight();
-}
-
-$(".btn-dy1").click(function(){
-  $("#iframepage").attr("src","time_more");
-  return false;
-});
-$(".btn-dy2").click(function(){
-  $("#iframepage").attr("src","circle_more");
-  return false;
-
-});
-
-
-</script>
-<style media="screen">
-.btn{
-  margin-top: 7px;
-}
-</style>
+  </style>

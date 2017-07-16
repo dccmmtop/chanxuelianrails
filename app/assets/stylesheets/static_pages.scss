@@ -1,16 +1,24 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.btn-title{
+
+.btn-title {
   float: right;
 }
-.input-text{
+
+.input-text {
   width: 200px;
 }
-.img-responsive{
+
+.img-responsive {
   width: 50px;
   height: 50px;
 }
-.btn-creat{
+
+.btn-creat {
   float: right;
 }
+
+  .name-time{
+    color: gray;
+  }
