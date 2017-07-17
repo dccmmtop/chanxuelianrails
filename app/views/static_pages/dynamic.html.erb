@@ -8,10 +8,12 @@
       </div>
     </div>
     <div class="panel-body">
-      <div class="">
+      <div class="content">
+        <!-- 详情界面 -->
+        <p hidden="" class="details">details_one.html</p>
 
         <table>
-          <tr>
+          <tr class="tr">
             <td><%= link_to image_tag("user1.jpg",alt:"user1",class:"img-responsive img-circle")%></td>
             <td ><span class="name-time">&nbsp&nbsp邓超<br>&nbsp&nbsp2017/7/14</span></td>
           </tr>
@@ -21,7 +23,9 @@
         <!-- <span class="glyphicon glyphicon-thumbs-up"></span> &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span> -->
       </div>
       <hr>
-      <div class="">
+      <div class="content">
+        <!-- 详情界面 -->
+        <p hidden="" class="details">details_two.html</p>
 
         <table>
           <tr>
@@ -35,6 +39,7 @@
       </div>
 
     </div>
+
     <div class="panel-footer">
       &nbsp
       <div class="pull-right">
@@ -44,3 +49,14 @@
   </div>
 
 </div>
+
+
+
+
+
+<script type="text/javascript">
+  $(".content").click(function(){
+    window.location.href=$(this).children(".details").text();
+  });
+
+</script>
