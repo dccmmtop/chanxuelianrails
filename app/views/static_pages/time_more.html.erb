@@ -16,7 +16,7 @@
             <div class="" style="margin-top:10px">
               <span class="glyphicon glyphicon-thumbs-up">
                 666</span>
-              &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment">&nbsp3</span>
+              <span class="glyphicon glyphicon-share-alt"></span>
 
             </div>
           </div>
@@ -28,7 +28,7 @@
 
         <div class="panel-body">
           <div class="content">
-            <p hidden="" class="details"> </p>
+            <p hidden="" class="details"></p>
             <table>
               <tr>
                 <td><%= link_to image_tag("user4.jpg",alt:"user1",class:"img-responsive img-circle")%></td>
@@ -40,8 +40,7 @@
                 <div class="" style="margin-top:10px">
                   <span class="glyphicon glyphicon-thumbs-up">
                     68</span>
-                  &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span>
-
+                  <span class="glyphicon glyphicon-share-alt"></span>
                 </div>
               </div>
             </div>
@@ -55,43 +54,43 @@
                   <tr>
                     <td><%= link_to image_tag("user2.jpg",alt:"user1",class:"img-responsive img-circle")%></td>
                     <td >
-                      <span class="name-time">&nbsp&nbspmonkeyfly<br>&nbsp&nbsp2017/7/14<span></td>
+                      <span class="name-time">monkeyfly</span><br>
+                      <span class="name-time">2017/7/14<span></td>
                       </tr>
                     </table>
                     机器之心 - 吴恩达重磅回归，成立创业公司Deeplearning.ai（分享自知乎网）<a href="https://zhuanlan.zhihu.com/p/27538445">链接：吴恩达重磅回归，成立创业公司Deeplearning.ai - 知乎专栏</a>
                     <div class="" style="margin-top:10px">
                       <span class="glyphicon glyphicon-thumbs-up">
                         0</span>
-                      &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-share-alt"></span>&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-comment"></span>
+                      <span class="glyphicon glyphicon-share-alt"></span>
                     </div>
                   </div>
-                  <hr>
-                  <table>
-                    <tr>
-                      <td><%= link_to image_tag("user3.jpg",alt:"user1",class:"img-responsive img-circle")%></td>
-                      <td >
-                          <span class="name-time">&nbsp&nbspwell </span>: 吴恩达在这个领域很专业<br>&nbsp&nbsp<span class="name-time">2017/7/14</span></td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <!-- <br > 的作用：  避免底部悬浮按钮遮挡文字 -->
-                  <br>
-                  <br>
-                  <br>
-                  <div id="footer">
-                    <nav class="navbar-fixed-bottom">
-                      <div class="btn-group btn-group-lg btn-group-justified">
-                        <%= link_to "按时间",time_more_path,class:"btn btn-default btn-dy1" %>
-                        <%= link_to "按圈子",circle_more_path,class:"btn btn-default btn-dy2" %>
-                      </div>
-                    </nav>
-                  </div>
-
                 </div>
+              </div>
 
-                <script type="text/javascript">
-                  $(".content").click(function () {
-                    window.location.href = $(this).children(".details").text();
-                  });
-                </script>
+              <!-- <br > 的作用：  避免底部悬浮按钮遮挡文字 -->
+              <br>
+              <br>
+              <br>
+              <div id="footer">
+                <nav class="navbar-fixed-bottom">
+                  <div class="btn-group btn-group-lg btn-group-justified">
+                    <%= link_to "按时间",time_more_path,class:"btn btn-default btn-dy1" %>
+                    <%= link_to "按圈子",circle_more_path,class:"btn btn-default btn-dy2" %>
+                  </div>
+                </nav>
+              </div>
+
+            </div>
+            <style media="screen">
+              .btn-dy1 {
+                background-color: #D8D8D8;
+              }
+
+            </style>
+
+            <script type="text/javascript">
+              $(".content").click(function () {
+                window.location.href = $(this).children(".details").text();
+              });
+            </script>
