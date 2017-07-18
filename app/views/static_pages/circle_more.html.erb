@@ -1,9 +1,10 @@
 <div class="container">
   <div class="img-title">
+    <p hidden="" class="hidden">circle_one.html</p>
     <!-- <%= link_to image_tag("default.png",alt:'default', class:'img-responsive')%> -->
     <div class="text-title">
 
-      <sapn class="" style="font-size:15px">
+      <sapn class="" >
         <b>人工智能</b>
       </span><br>
       ——<br>
@@ -13,22 +14,22 @@
   </div>
 
   <div class="img-title">
+    <p hidden="" class="hidden">circle_two.html</p>
     <!-- <%= link_to image_tag("default2.jpg",alt:'default', class:'img-responsive')%> -->
     <div class="text-title">
-
-      <sapn class="" style="font-size:15px">
+      <sapn class="" >
         <b>GoodLuck</b>
       </span><br>
       ——<br>
       bird
     </div>
-
   </div>
   <div class="img-title">
+    <p hidden="" class="hidden">circle_three.html</p>
     <!-- <%= link_to image_tag("def.jpg",alt:'default', class:'img-responsive')%> -->
     <div class="text-title">
 
-      <sapn class="" style="font-size:15px">
+      <sapn class="" >
         <b>金融</b>
       </span><br>
       ——<br>
@@ -61,15 +62,21 @@
     margin-left: 30px;
     width: 120px;
     height: 120px;
-    background-color: #AAFFEE;
-    border-width: 2px;
-    border-color: red;
+    background-color: #EFF8FB;
+
+    border: 2px solid #F5F6CE;
     float: left;
 
   }
   .text-title {
+    font-size: 15px;
+
+    font-family: fantasy;
     text-align: center;
     margin-top: 20px;
+  }
+  .text-title span{
+     font-weight: bold;
   }
   .img-responsive {
     width: 120px;
@@ -77,3 +84,8 @@
   }
 
 </style>
+<script type="text/javascript">
+  $(".img-title").click(function () {
+    window.location.href=$(this).children(".hidden").text();
+  });
+</script>

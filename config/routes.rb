@@ -12,6 +12,10 @@ Rails.application.routes.draw do
   get 'details_two' ,to:'static_pages#details_two'
   get 'details_three' ,to:'static_pages#details_three'
 
+  get 'circle_one',to:'static_pages#circle_one'
+  get 'circle_two',to:'static_pages#circle_two'
+  get 'circle_three',to:'static_pages#circle_three'
+
 
   root 'static_pages#dynamic'
 end

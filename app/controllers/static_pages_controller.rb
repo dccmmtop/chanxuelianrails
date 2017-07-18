@@ -18,4 +18,10 @@ class StaticPagesController < ApplicationController
   def details_two; end
 
   def details_three; end
+
+  def circle_one; end
+
+  def circle_two; end
+
+  def circle_three; end
 end
