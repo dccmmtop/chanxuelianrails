@@ -15,7 +15,10 @@
         <table>
           <tr class="tr">
             <td><%= link_to image_tag("user1.jpg",alt:"user1",class:"img-responsive img-circle")%></td>
-            <td ><span class="name-time">邓超</span><br><span class="name-time">2017/7/14</span></td>
+            <td >
+              <span class="name-time">邓超</span><br>
+              <span class="name-time">2017/7/14</span>
+            </td>
           </tr>
 
         </table>
@@ -30,7 +33,10 @@
         <table>
           <tr>
             <td><%= link_to image_tag("user2.jpg",alt:"user1",class:"img-responsive img-circle")%></td>
-            <td style=""><span class="name-time">monkeyfly</span><br><span class="name-time">2017/7/13</span></td>
+            <td style="">
+              <span class="name-time">monkeyfly</span><br>
+              <span class="name-time">2017/7/13</span>
+            </td>
           </tr>
 
         </table>
@@ -41,7 +47,6 @@
     </div>
 
     <div class="panel-footer">
-      &
       <div class="pull-right">
         <%= link_to "更多",time_more_path%>
       </div>
@@ -50,13 +55,8 @@
 
 </div>
 
-
-
-
-
 <script type="text/javascript">
-  $(".content").click(function(){
-    window.location.href=$(this).children(".details").text();
+  $(".content").click(function () {
+    window.location.href = $(this).children(".details").text();
   });
-
 </script>
